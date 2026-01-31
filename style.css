@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+}
+
+.profile-img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 350px;
+  min-height: 520px;
+  background-color: hsl(0, 0%, 12%);
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.bttns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px;
+  margin: 15px;
+}
+
+button {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  width: 280px;
+  height: 40px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+button:active {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+h3 {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 12px;
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 13px;
+  color: rgb(170, 170, 170);
+  margin-top: 10px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  button {
+    width: 100%;
+  }
+}
